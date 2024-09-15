@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en" xml:lang="en">
+
+<head>
+    <!-- Meta tags for SEO -->
+    <title>Amruth Kuntamalla - Profile | Lab 1 - Hello HTML</title>
+    <meta content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/css/styles.css">
+
+    <!-- Styles for this page only -->
+    <style>
+        html {
+            font-family: sans-serif;
+            font-size: 16px;
+            line-height: 1.5;
+            color: #333;
+            --primary: #FF8225;
+            --secondary: #173B45;
+            --bg-primary: #F5F7F8;
+            padding-right: 1vw;
+            padding-left: 1vw;
+            scroll-behavior: smooth;
+        }
+
+        header {
+            padding: 2vw;
+            display: flex;
+            justify-content: space-between;
+            margin: auto;
+            margin-top: 3vh;
+        }
+
+        @media screen and (max-width: 600px) {
+            .header {
+                flex-direction: column;
+            }
+        }
+
+        .heading {
+            font-size: 4rem;
+            margin: 0;
+            line-height: normal;
+            font-style: italic;
+        }
+
+        .greeting {
+            font-size: 2rem;
+            margin: 0;
+        }
+
+        a {
+            color: inherit;
+        }
+
+        a:hover {
+            color: var(--primary);
+            text-decoration: underline;
+        }
+
+        .description {
+            font-size: 1.5rem;
+            margin: 0;
+            text-align: justify;
+        }
+
+        .profile-img {
+            width: 450px;
+            height: 100%;
+            border-radius: 7%;
+            transition: all 0.3s ease;
+        }
+
+        .profile-img:hover {
+            transform: scale(1.04);
+        }
+
+        .profile-pic-caption {
+            font-size: 0.8rem;
+        }
+
+        /* Skills */
+        .skills {
+            background-color: white;
+            padding: 0.5vw;
+            border-radius: 1vw;
+            margin-top: 2vh;
+        }
+
+        .subheading {
+            text-align: center;
+            font-size: 2rem;
+        }
+
+        .skills-list,
+        .social-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: space-evenly;
+            transition: all 0.3s ease;
+        }
+
+        .social-list {
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1vw;
+        }
+
+        .skill {
+            padding: 1vw;
+            background-color: white;
+            text-align: center;
+            border-radius: 0.4vw;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .skill:hover,
+        .social:hover {
+            background-color: var(--bg-primary);
+            transform: scale(1.2);
+        }
+
+        /* on focus lost */
+
+        .skill:focus {
+            outline: none;
+        }
+
+        .skill:focus-visible {
+            outline: 2px solid var(--primary);
+        }
+
+
+
+        .skill a {
+            text-decoration: none;
+        }
+
+        .social a {
+            text-decoration: none;
+        }
+
+        .skill-img {
+            width: 100%;
+            height: 140px;
+        }
+
+        /* footer */
+        .footer {
+            text-align: center;
+            margin: 6vh;
+        }
+
+
+        .social-img {
+            width: 100%;
+            height: 30px;
+        }
+    </style>
+</head>
+
+
+
+<body>
+    <nav>
+        <ul class="nav-list">
+            <li>
+                <a class="nav-item nav-active" href="Profile.html">Profile</a>
+            </li>
+            <li>
+                <a class="nav-item" href="cities.html">Cities</a>
+            </li>
+        </ul>
+    </nav>
+    <!-- Page Heading -->
+    <header class="header">
+        <div style="margin-top: auto;margin-bottom: auto;width: 100%;">
+            <h2 class="greeting">Greetings people, <i>I'm</i></h2>
+            <h1 class="heading">Amruth Kuntamalla</h1>
+            <p class="description">
+                I'm currently pursuing my Masters degree in Data Science at the <a href="https://www.newhaven.edu/"
+                    target="_blank" rel="noopener noreferrer">University of
+                    New Haven</a>.
+                I love to code and build cool stuff. I have worked as a Software Developer for 3 years in India. I have
+                an expertise in Mobile App and Web Development. I love to use technology to solve real world problems.
+                I have a passion for Data Science which is why I am pursuing my Masters degree. To know more about me,
+                visit my Social Profiles <a href="#social">below</a>. </p>
+        </div>
+
+        <div style="width: 100%; margin: auto; text-align: center;">
+            <img class="profile-img" src="profile.jpg" alt="Amruth Kuntamalla">
+            <p class="profile-pic-caption"><i>(I know, it should be a professional photo, but, this is the best I can
+                    do. :P)</i></p>
+        </div>
+    </header>
+
+
+    <!-- Skills -->
+    <section class="skills">
+        <h2 class="subheading">Top Skills</h2>
+        <ul class="skills-list">
+            <li class="skill">
+                <a href="https://reactnative.dev/" target="_blank" rel="noopener noreferrer">
+                    <img class="skill-img" src="static/images/skills/react-native.svg" alt=" Python">
+                    <p>React Native</p>
+                </a>
+            </li>
+
+            <li class="skill">
+                <a target="_blank" rel="noopener noreferrer" href="https://github.com/amruthkuntamalla/CS-Project-1">
+                    <img class="skill-img" src="static/images/skills/nodejs.png" alt="NodeJS">
+                    <p>NodeJS</p>
+                </a>
+            </li>
+
+
+            <li class="skill">
+                <a target="_blank" rel="noopener noreferrer" href="https://nodejs.org/en">
+                    <img class="skill-img" src="static/images/skills/python.jpeg" alt="Python">
+                    <p>Python</p>
+                </a>
+            </li>
+
+            <li class="skill">
+                <a target="_blank" rel="noopener noreferrer" href="https://nextjs.org/">
+                    <img class="skill-img" src="static/images/skills/nextjs.webp" alt="NextJS">
+                    <p>NextJS</p>
+                </a>
+            </li>
+
+
+            <li class="skill">
+                <a target="_blank" rel="noopener noreferrer" href="https://aws.amazon.com/">
+                    <img class="skill-img" src="static/images/skills/aws.jpg" alt="Amazon Web Services (AWS)">
+                    <p>Amazon Web Services (AWS)</p>
+                </a>
+            </li>
+        </ul>
+    </section>
+
+    <!-- footer with socials -->
+    <footer id="social" class="footer">
+        <ul class="social-list">
+            <li class="social">
+                <a href="https://www.linkedin.com/in/amruthk99/" target="_blank" rel="noopener noreferrer">
+                    <img class="social-img" src="static/images/social/linkedin.png" alt=" Linkedin">
+                </a>
+            </li>
+
+            <li class="social">
+                <a target="_blank" rel="noopener noreferrer" href="https://github.com/amruth-k99">
+                    <img class="social-img" src="static/images/social/github.png" alt="Github">
+                </a>
+            </li>
+
+            <li class="social">
+                <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/amruth99_/">
+                    <img class="social-img" src="static/images/social/isntagram.webp" alt="instagram">
+                </a>
+            </li>
+
+        </ul>
+
+
+        <p>© 2024 Made with &hearts; by Amruth Kuntamalla</p>
+    </footer>
+
+</body>
+
+</html>
